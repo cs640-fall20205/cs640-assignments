@@ -111,9 +111,11 @@ quick way to... well... save and stop.
 
 ## Command: `begin MODULE`
 
-Your instructor will post materials to a contents repository.
-You can copy modules into your workspace by running `begin MODULE` where `MODULE` is the name of the module given
-to you by your instructor.
+Your instructor will post materials to the `src/` directory of a contents repository.
+This repository is copied into your workspace under `tmp/`.
+You can copy modules into your workspace by running `begin MODULE` where `MODULE`
+is the name of the module given to you by your instructor
+(a directory name in `tmp/contents/src`).
 
 ## Directory: `tmp/`
 
