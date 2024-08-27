@@ -100,13 +100,15 @@ At the end of a work sessions, stop your workspace by either
 running `gp stop` in VS Code's command-line.
 
 A stopped workspace can be restarted.
-Any changes you made before stopping will still be there when you restart it. But remember these changes only exist in your
+Any changes you made before stopping will still be there when you restart it.
+But remember these changes only exist in your
 workspace until you save it to your GitLab repository with `save`.
 
 ## Command: `save-and-stop`
 
 As a convenience, your instructor has provided you with a
-`save-and-stop` command. This will run both `save` and `gp stop`. Using this at the end of each work session is a
+`save-and-stop` command. This will run both `save` and `gp stop`.
+Using this at the end of each work session is a
 quick way to... well... save and stop.
 
 ## Command: `begin MODULE`
@@ -122,3 +124,38 @@ is the name of the module given to you by your instructor
 The `tmp/` directory contains files that will not be saved
 to your repository. If you want something saved, make sure
 you first copy or move it outside `tmp/`.
+
+---
+
+# Activity
+
+1. Open your personal repository in GitPod. Tips:
+    * It's in the `individual` group, and should have your last name.
+    * If you don't see it, make sure you are logged into GitLab.
+2. Get a copy of the vdi lesson by running `begin vdi`.
+3. Open the README.md in `vdi/` (this file) and preview it using `CTRL + SHIFT + V`
+    (`CMD + SHIFT + V` on Mac). Confirm that you see diagrams.
+4. Write your name here:
+    ```
+    REPLACE THIS WITH YOUR NAME
+    ```
+5. See that it is nicely formatted in the preview pane.
+6. READ THIS ENTIRE STEP BEFORE DOING IT.
+    a. Stop your workspace by typing `gp stop` in the terminal.
+    b. After it has been stopped, restart it.
+    c. Open this file again, and confirm it still has your name in it.
+7. Use a browser to inspect your repository in GitLab, and confirm that
+    `vdi/README.md` does not exist.
+8. Save your work to your repository by typing `save` in the terminal.
+9. Use a browser to inspect your repository and confirm that it contains
+    a `vdi/README.md` with your name in it.
+10. Write your instructor's name below:
+    ```
+    REPLACE THIS WITH YOUR INSTRUCTOR'S NAME
+    ```
+11. Confirm that it is nicely formatted in the preview pane.
+12. Save your work and stop the workspace in a single command using `save-and-stop`.
+13. Confirm that your GitLab repository contains all the changes you made to this file.
+14. Use a browser to find out how many credits you have left in GitPod.
+15. Also confirm that all of your workspaces have been stopped.
+16. Find out how long GitPod keeps your workspaces before it deletes them.
