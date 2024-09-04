@@ -3,5 +3,6 @@
     "plantuml.render": "PlantUMLServer",
     "zenMode.silentNotifications": true,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true
 }
