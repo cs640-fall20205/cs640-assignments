@@ -1,7 +1,0 @@
-image: gitpod/workspace-full
-
-tasks:
-    - name: Load functions
-      command: |
-        cat .gitpod/functions.bash >> ~/.bashrc
-        exec bash
