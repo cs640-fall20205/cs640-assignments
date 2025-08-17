@@ -1,5 +1,4 @@
 
-# HE: Create different queries.
 # Assignment 1 - Postres
 
 The deadline for this assignment is in Kodiak.
@@ -11,9 +10,9 @@ in a file named `db.sql` in the same directory as this file.
 
 ## Part 2
 
-Complete the in-chapter Day 1 Homework
+Complete the following (part of which is from the Day 1 Homework from the text)
 
-**Find**
+**Find From Day 1 Homework**
 
 1.
 
@@ -23,28 +22,57 @@ Complete the in-chapter Day 1 Homework
 
 2. (No answer required)
 
-3.
+1.
 
     ```
     Replace this with your answer
     ```
-
 
 **Do**
 
-1. (Write the SQL query you created.)
+4. Select all the tables that you created from pg_class and examine the tables to identify the types of metadata Postgres stores about the tables. Explain below:
 
     ```
     Replace this with your answer
     ```
 
-2. (Write the SQL query you created.)
+5. Write a query that finds the country name of the Fight Club event.
 
     ```
     Replace this with your answer
     ```
 
-3. (Write the SQL query you created.)
+3. Add a city in the U.S. for Springfield with a zip of 01119. Show the query below:
+
+    ```
+    Replace this with your answer
+    ```
+
+4. Add a private venue in the U.S. for Rivers Hall with address 1215 Wilbraham Rd, Springfield, MA , zipcode 01119.
+
+    ```
+    Replace this with your answer
+    ```
+
+5. Add an event called ‘New Student Welcome’ that starts at 3:30 PM on August 22nd and ends at 5:00 PM on August 22nd that is held in Rivers Hall.
+
+    ```
+    Replace this with your answer
+    ```
+
+6. Alter the events table with a boolean value called “adult” that is true if the event is for adults only and false otherwise.
+
+    ```
+    Replace this with your answer
+    ```
+
+7. Add an event titled “cooking class” that is adult only to be held in the Crystal Ballroom. List the query here:
+
+    ```
+    Replace this with your answer
+    ```
+
+8. Write a query that shows the cities, event title and venue name for all events with a venue:
 
     ```
     Replace this with your answer
@@ -54,13 +82,13 @@ Complete the in-chapter Day 1 Homework
 
 Read Chapter 2 Wrap-up and then
 
-4. List the strengths of Postgres and relational databases.
+12. List the strengths of Postgres and relational databases.
 
     * (first strength)
     * (second strength)
     *
 
-5. List of Postgres' weaknesses.
+13. List of Postgres' weaknesses.
 
     *
     *
@@ -72,4 +100,4 @@ Use `save` and or `save-and-stop` to commit and push your work to your
 personal repository for this class on GitLab.
 
 Check that your work is properly submitted by browsing your repository
-on ***GitLab*** (not in GitPod).
+on ***GitHub***.
