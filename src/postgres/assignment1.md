@@ -14,7 +14,7 @@ Complete the following (part of which is from the Day 1 Homework from the text)
 
 **Find From Day 1 Homework**
 
-1.
+1. (1 pt)
 
     ```
     Replace this with your answer
@@ -22,7 +22,7 @@ Complete the following (part of which is from the Day 1 Homework from the text)
 
 2. (No answer required)
 
-1.
+1. (1 pt)
 
     ```
     Replace this with your answer
@@ -30,49 +30,49 @@ Complete the following (part of which is from the Day 1 Homework from the text)
 
 **Do**
 
-4. Select all the tables that you created from pg_class and examine the tables to identify the types of metadata Postgres stores about the tables. Explain below:
+4. (2 pts) Select all the tables that you created from pg_class and examine the tables to identify the types of metadata Postgres stores about the tables. Explain below:
 
     ```
     Replace this with your answer
     ```
 
-5. Write a query that finds the country name of the Fight Club event.
+5. (1 pt) Write a query that finds the country name of the Fight Club event.
 
     ```
     Replace this with your answer
     ```
 
-3. Add a city in the U.S. for Springfield with a zip of 01119. Show the query below:
+3. (1 pt) Add a city in the U.S. for Springfield with a zip of 01119. Show the query below:
 
     ```
     Replace this with your answer
     ```
 
-4. Add a private venue in the U.S. for Rivers Hall with address 1215 Wilbraham Rd, Springfield, MA , zipcode 01119.
+4. (1 pt) Add a private venue in the U.S. for Rivers Hall with address 1215 Wilbraham Rd, Springfield, MA , zipcode 01119.
 
     ```
     Replace this with your answer
     ```
 
-5. Add an event called ‘New Student Welcome’ that starts at 3:30 PM on August 22nd and ends at 5:00 PM on August 22nd that is held in Rivers Hall.
+5. (1 pt) Add an event called ‘New Student Welcome’ that starts at 3:30 PM on August 22nd and ends at 5:00 PM on August 22nd that is held in Rivers Hall.
 
     ```
     Replace this with your answer
     ```
 
-6. Alter the events table with a boolean value called “adult” that is true if the event is for adults only and false otherwise.
+6. (1 pt) Alter the events table with a boolean value called “adult” that is true if the event is for adults only and false otherwise.
 
     ```
     Replace this with your answer
     ```
 
-7. Add an event titled “cooking class” that is adult only to be held in the Crystal Ballroom. List the query here:
+7. (1 pt) Add an event titled “cooking class” that is adult only to be held in the Crystal Ballroom. List the query here:
 
     ```
     Replace this with your answer
     ```
 
-8. Write a query that shows the cities, event title and venue name for all events with a venue:
+8. (1 pt) Write a query that shows the cities, event title and venue name for all events with a venue:
 
     ```
     Replace this with your answer
@@ -82,13 +82,13 @@ Complete the following (part of which is from the Day 1 Homework from the text)
 
 Read Chapter 2 Wrap-up and then
 
-12. List the strengths of Postgres and relational databases.
+12. (2 pts) List the strengths of Postgres and relational databases.
 
     * (first strength)
     * (second strength)
     *
 
-13. List of Postgres' weaknesses.
+13. (2 pts) List of Postgres' weaknesses.
 
     *
     *
