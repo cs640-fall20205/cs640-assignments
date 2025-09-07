@@ -61,6 +61,8 @@ Questions
 5. When is a row from Customers or Orders included?
 6. What is the meaning of INNER JOIN?
 
+---
+
 ## Model 3
 
 Query
@@ -85,6 +87,8 @@ Questions
 2. Which orders are not included in the result?
 3. When is a row included?
 4. What is the meaning of LEFT OUTER JOIN?
+
+---
 
 ## Model 4
 
@@ -112,6 +116,8 @@ Questions
 3. When is a row included?
 4. What is the meaning of RIGHT OUTER JOIN?
 
+---
+
 ## Model 5
 
 Query
@@ -138,6 +144,8 @@ Questions
 2. Which orders are not included in the result?
 3. When is a row included?
 4. What is the meaning of FULL JOIN?
+
+---
 
 ## Model 6
 
