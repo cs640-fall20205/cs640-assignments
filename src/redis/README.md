@@ -42,7 +42,7 @@ $ ./down.bash
 $ sudo cp dump.rdb /tmp/redis-data/dump.rdb
 ```
 
-## Start clean after saving (in same GitPod session)
+## Start clean after saving (in same CodeSpace session)
 
 ```
 $ ./down.bash
@@ -52,30 +52,48 @@ $ ./up.bash
 
 ## Daily workflow
 
-```
-## Open your project in GitPod.
+## 1. Open your project in GitPod.
 
-## Reposition terminal
+## 2. Reposition terminal
+
+```
 $ cd redis
 
-## Restore saved database from last time. (Skip if this is your first time.)
+```
+
+## 3. Restore saved database from last time. (Skip if this is your first time.)
+
+```
 $ ./up.bash
 $ ./down.bash
 $ sudo cp dump.rdb /tmp/redis-data/dump.rdb
 
-## Start and connect to database
+```
+
+## 4. Start and connect to database
+
+```
 $ ./up.bash
 $ ./shell.bash
 
-## Do work
+```
+
+## 5. Do work
+
+```
 redis>
 
-## Save, disconnect from, and stop database
+```
+
+## 6. 6Save, disconnect from, and stop database
+
+```
 redis> SAVE
 redis> quit
 $ cp /tmp/redis-data/dump.rdb dump.rdb
 $ ./down.bash
 
-## Save work to GitLab and stop GitPod
-$ save-and-stop
 ```
+
+## 7. Save work to GitHub
+
