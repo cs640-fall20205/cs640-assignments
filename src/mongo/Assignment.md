@@ -1,11 +1,11 @@
 # Assignment 3 - Mongo
 
-## Day 1 - Reading
+## Part 1 (10 pts): Day 1 - Reading
 
 1. Read Day 1 and work through the examples. Dump your database into a
     directory named data.
 
-## Day 1 - Find
+## Part 2 (10 pts): Day 1 - Find
 
 Complete the "Find" homework in Day 1.
 
@@ -27,35 +27,42 @@ Complete the "Find" homework in Day 1.
     different languages.
 
 
-## Day 1 - Do
+## Part 3 (15 pts): Create and populate a database to hold library books and patrons. 
+For each of the steps below, provide the mongodb code that accomplishes this. Store your work in a folder called “Library”. 
 
-Complete the "Do" homework in Day 1
+### Step 1: Create the Database
 
-1. Print a JSON document containing { "hello" : "world" }.
-    Remember, the mongo shell is JavaScript.
-    Write the command. (Tip: use JSON.stringify)
+For this assignment, you will be working with the two collections described below. **Use the exact document and attribute names provided!**
+* books - stores information about library books 
+    * Should use attributes of:  title, author, isbn, genre, publishedYear, copiesAvailable, and totalCopies
+    * Make sure that some of your books are in the “Fiction” genre and some are in “Non-Fiction” 
+    * Make sure that at least two of your books have copies available to check out. 
+* patrons - stores information about library members
+    * Should use attributes of:    name, email, membershipDate, booksCheckedOut (array of title and dueDate), and fines. 
+    * Make sure that at least one of your patrons has checked out more than one book. 
+    * Make sure that at least one of your patrons has an overdue fine.
+    * Make sure that at least one of your patrons joined the library in 2004.
+      
+### Step 2: Insert Books into the Library
+Insert six of your favorite books into the library.  Make sure that these are your favorite books, not randomly generated books. 
 
+### Step 3 Insert Patrons into the Library
+Insert five of your friends as patrons into the library. Make sure that these are not randomly generated. 
 
-2. Select a town via a case-insensitive regular expression containing the
-    word new. (Tip: append .pretty() to your command to get nicer output).
-    Write the command.
+### Step 3: Queries 
+For each of the queries below, write the query and include the results. 
 
+1. Write a query to find the titles of all books that have at least one copy available for checkout. 
 
-3. Find all cities whose names contain an e and are famous for food or beer.
-    Write the command.
+2. Write a query to find the authors of all books in the "Fiction" genre.
 
+3. Write a query to find the names of all patrons who owe fines (fines greater than $0).
 
-4. Create a new database named blogger with a collection named articles. Insert
-    a new article with an author name and email, creation date, and text.
-    Write the command.
+4. Write a query to find the names and membership date of all patrons who became members in the year 2024.
 
+Hint: Use $gte and $lt operators to specify a date range from January 1, 2024 to January 1, 2025.
 
-5. Update the article with an array of comments, containing a comment with
-    an author and text.
-    Write the command.
-
-
-## Day 2 - Do
+## Part 4 (10 pts): Day 2 - Do
 
 Complete the "Find" homework in Day 2.
 
