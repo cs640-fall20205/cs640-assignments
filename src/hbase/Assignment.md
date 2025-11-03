@@ -2,7 +2,7 @@
 
 ## 7in7 - HBase - Day 1
 
-### Interactive Reading
+### Part 1 - Interactive Reading
 
 Read Day 1 and work through the examples in the chapter.
 Save your final database in a directory `day1` as follows.
@@ -24,9 +24,12 @@ Here are some additional tips:
     These are illustrative examples in python.
 * p64 - The last example is split over 2 lines. `hbase>` and `hbase*` are
     not part of the command.
+* I have not been able to use the colons inside of quotes in the hbase commands. If they don't work with the colon, try them without.
+* The command to allow unlimited  versions is:
 
+`alter 'wiki', {NAME => 'text', VERSIONS => 2147483647 }`
 
-### 7in7 - HBase Day 1 - Find
+### Part 2: 7in7 - HBase Day 1 - Find
 
 1. Figure our how to use the shell to do the following:
 
@@ -49,78 +52,66 @@ Here are some additional tips:
     WRITE URL HERE
     ```
 
-### 7in7 - HBase Day 1 - Do
+### Part 3: Create a family database
 
-1. Create a function called put_many() that creates a Put instance, adds any
-   number of column-value pairs to it, and commits it to a table.
+#### Step 1 - Create an hbase table that represents a family.
 
-   Below is some starter code with comments. The code fragment below was
-   created by combining the example on p65 with the starter function in
-   the problem description.
+Specifically, you should have column families for the following:
+* personal information: names of family members and birthdays
+* favorites: foods and vacation locations
+* location information: addresses including street, city, state, and zip. and phone numbers
 
-    def put_many(table_name, row, column_values)
-        # The code in this function was taken from the example on pg 65.
-        # You need to generalize it by replacing strings like "wiki" and
-        # "Home" with input parameters.
+Place the Hbase code to create the families below:
+```
 
-        table = HTable.new(@hbase.configuration, "wiki")
-        p = Put.new(*jbytes("Home"))
+```
 
-        # The following three lines from the example on pg 65 must be
-        # converted into a loop.
-        #
-        #    p.add(*jbytes("text", "", "Hello world"))
-        #    p.add(*jbytes("revision", "author", "jimbo"))
-        #    p.add(*jbytes("revision", "comment", "my first edit"))
-        #
-        # The column_values parameter contains a hash. See the second problem
-        # in the text for an example of what will be passed for column_values.
-        #
-        # In Ruby, you use the "each_pair do" to loop through the values of a hash.
-        # For example, if myhash is a variable containing a hash, here is
-        # a loop that makes each key, value pair available inside the loop.
-        #
-        #     myhash.each_pair do |key, value|
-        #         # On each pass of the loop, key and value are assigned
-        #         # one of the key-value pairs in myhash.
-        #     end
-        #
-        # You'll need one more trick to complete the loop. Notice that each
-        # key contains a string that has the form "family:column". You'll
-        # need to use the split function to separate them into two variables.
-        # Here is the code for that.
-        #
-        #     family, column = key.split(':')
-        #
-        # Now write a loop to process each key, value pair in column_values
-        # and add them to the Put object p.
+#### Step 2 - Load five rows of data.
+Make sure to have at least one row with more than one favorite food and at least one row with more than one favorite vacation location. Place the Hbase code below:
+```
 
+```
 
-        # Now we execute the put statement. You don't need to modify this
-        # statement.
-        table.put(p)
-    end
+#### Step 3 – Create HBase queries for the items below.
 
-2. Define your put_many() function by pasting it in the HBase shell, and then
-   call it like so:
+Place the Hbase code and the results after each query.
 
-        put_many 'wiki', 'Some title', {
-            hbase* "text:" => "Some article text",
-            hbase* "revision:author" => "jschmoe",
-            hbase* "revision:comment" => "no comment" }
+**Query 1:** Get complete information for a specific family member.
+```
+ANSWER HERE
+```
 
-    Test that it worked by running:
+**Query 2:** View only personal information for all family members.
+```
+ANSWER HERE
+```
 
-        scan "wiki"
+**Query 3:** Get the name, favorite foods, and vacation locations for one family member.
+```
+ANSWER HERE
+```
 
-    Paste the output from the last command below.
+**Query 4:** Get a range of at least two family members.
+```
+ANSWER HERE
+```
 
-    ```
-    PASTE OUTPUT HERE
-    ```
+**Query 5:** Get the addresses for all family members.
+```
+ANSWER HERE
+```
 
+**Query 6:** Get the names of family members who like a specific favorite food (e.g., pizza).
+```
+ANSWER HERE
+```
 
-### 7in7 - Day 3 - Wrap Up
+**Query 7:** Create a vacation preference list with names.
+```
+ANSWER HERE
+```
+
+### Part 4 - 7in7 - Day 3 - Wrap Up
 
 Read Day 3 - Wrap Up. Then answer the following.
 
@@ -193,5 +184,3 @@ help you along. Good luck!
     ```
 
     Copy and past the output of this command below.
-
-
