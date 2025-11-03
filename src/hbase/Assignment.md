@@ -29,7 +29,7 @@ Here are some additional tips:
 
 `alter 'wiki', {NAME => 'text', VERSIONS => 2147483647 }`
 
-### Part 2: 7in7 - HBase Day 1 - Find
+### Part 2 - 7in7 - HBase Day 1 - Find
 
 1. Figure our how to use the shell to do the following:
 
@@ -52,7 +52,7 @@ Here are some additional tips:
     WRITE URL HERE
     ```
 
-### Part 3: Create a family database
+### Part 3 - Create a family database
 
 #### Step 1 - Create an hbase table that represents a family.
 
@@ -74,7 +74,7 @@ Make sure to have at least one row with more than one favorite food and at least
 
 #### Step 3 – Create HBase queries for the items below.
 
-Place the Hbase code and the results after each query.
+Place the Hbase code **and the results** after each query.
 
 **Query 1:** Get complete information for a specific family member.
 ```
